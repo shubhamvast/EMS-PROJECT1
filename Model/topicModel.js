@@ -16,6 +16,17 @@ const topicSchema = new mongoose.Schema({
 })
 
 const Topic = mongoose.model("topic",topicSchema);
+const Joi = require("joi");
+Joi.objectId = require('joi-objectid')(Joi)
+
+function validateTopic(topic){
+    const schema = Joi.object({
+        name: Joi.string().min(4).max(255).required(),
+        subject: Joi.objectId()
+    });
+
+    return schema.validate(topic);
+}
 
 
-module.exports = {Topic}
+module.exports = {Topic,topicSchema,validateTopic};

@@ -1,2 +1,4 @@
-const {Topic} = require("../Model/topicModel");
+const {Topic,topicSchema,validateTopic} = require("../Model/topicModel");
+
+
 
