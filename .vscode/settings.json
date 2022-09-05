@@ -1,8 +1,3 @@
 {
-<<<<<<< HEAD
-  "codetogether.virtualCursorJoin": "ownVirtualCursor",
-  "codetogether.virtualCursorRemember": true
-=======
   "codetogether.virtualCursorJoin": "ownVirtualCursor"
->>>>>>> f5a53cf8b9171133da1a031517756591ec297ed9
 }
